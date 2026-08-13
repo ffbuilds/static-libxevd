@@ -1,0 +1,12 @@
+---
+name: Lint Code Base
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    uses: ffbuilds/.github/.github/workflows/linter.yml@main
